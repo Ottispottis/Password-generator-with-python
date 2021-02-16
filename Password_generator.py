@@ -99,8 +99,7 @@ def pass_generator(pass_info,length):
     return generated_password
 
 
-if __name__ == '__main__':
-
+def start():
     length = get_length()
 
     num_value, special_value, letters_value = get_password_requirements()
@@ -109,6 +108,24 @@ if __name__ == '__main__':
 
     password = pass_generator(pass_info, length)
 
-    print("Your randomly generated password is:",password)
+    print("Your randomly generated password is:", password)
+
+    question = input("Do you want to create a new password (yes or no)?: ")
+
+    while question.lower() not in ("yes", "no"):
+        question = input("Please type yes or no: ")
+    if question == "yes":
+        start()
+    else:
+        exit()
+
+
+if __name__ == '__main__':
+    start()
+
+
+
+
+
 
 
