@@ -3,7 +3,13 @@ import string
 
 """
 
-PASSWORD GENERATOR made by Otto Heldt
+PASSWORD GENERATOR
+
+Author: Otto Heldt
+
+Version 1.0
+
+A password generator that prints out a password according to the requirements the user has given to it.
 
 """
 
